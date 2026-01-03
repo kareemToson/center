@@ -23,7 +23,7 @@ class Header extends StatelessWidget {
         const SizedBox(width: 8),
         Text(
           AppLocale.title.getString(context),
-          style: StylessManager.blackFont20,
+          style: StylessManager.blackFont20(context),
         ),
       ],
     );
