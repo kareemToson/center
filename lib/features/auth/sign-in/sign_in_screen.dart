@@ -71,6 +71,21 @@ class _SignInScreenState extends State<SignInScreen> {
                     controller: passwordController,
                     isPassword: true,
                   ),
+                  SizedBox(height: context.heightPercent(3)),
+                  //forget password button
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        AppLocale.forgetPassword.getString(context),
+                        style: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
