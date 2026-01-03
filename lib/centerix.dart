@@ -1,3 +1,4 @@
+import 'package:center/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'core/routing/router.dart';
 
@@ -8,7 +9,7 @@ class Centerix extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Centerix',
-      initialRoute: '/',
+      initialRoute: Routes.splash,
       onGenerateRoute: AppRouter.generateRoute,
     );
   }
