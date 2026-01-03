@@ -33,7 +33,7 @@ class AppButton extends StatelessWidget {
           elevation: 0,
         ),
         child: Text(
-          AppLocale.logIn.getString(context),
+          title,
           style: TextStyle(
             color: Colors.black,
             fontSize: 18,

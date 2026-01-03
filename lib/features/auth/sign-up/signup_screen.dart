@@ -1,42 +1,48 @@
 import 'package:center/core/extensions/responsive.dart';
 import 'package:center/core/localization/app_locale.dart';
 import 'package:center/core/routing/routes.dart';
+
 import 'package:center/core/styles/colors_manager.dart';
 import 'package:center/core/styles/styels_manager.dart';
 import 'package:center/core/widgets/header_widget.dart';
-import 'package:center/features/auth/forget_password/forget_password_screen.dart';
+
 import 'package:center/features/auth/widgets/auth_button.dart';
 import 'package:center/features/auth/widgets/divider.dart';
-import 'package:center/features/auth/widgets/guest.dart';
+
 import 'package:center/features/auth/widgets/input_field.dart';
 import 'package:center/features/auth/widgets/signin_google_ios.dart';
+import 'package:center/features/auth/widgets/welecom_text_for_SignUp.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localization/flutter_localization.dart';
 
-import '../widgets/welcome_text_widget.dart';
-
-class SignInScreen extends StatefulWidget {
-  const SignInScreen({super.key});
+class SignupScreen extends StatefulWidget {
+  const SignupScreen({super.key});
 
   @override
-  State<SignInScreen> createState() => _SignInScreenState();
+  State<SignupScreen> createState() => _SignupScreenState();
 }
 
-class _SignInScreenState extends State<SignInScreen> {
+class _SignupScreenState extends State<SignupScreen> {
+  late TextEditingController nameController;
   late TextEditingController phoneController;
   late TextEditingController passwordController;
+  late TextEditingController confirmPasswordController;
   @override
   void initState() {
+    nameController = TextEditingController();
     phoneController = TextEditingController();
     passwordController = TextEditingController();
+    confirmPasswordController = TextEditingController();
     super.initState();
   }
 
   @override
   void dispose() {
+    nameController.dispose();
     phoneController.dispose();
     passwordController.dispose();
+    confirmPasswordController.dispose();
     super.dispose();
   }
 
@@ -62,8 +68,16 @@ class _SignInScreenState extends State<SignInScreen> {
                   // header
                   Header(),
                   SizedBox(height: context.heightPercent(5)),
-                  const WelcomeTextWidget(),
+                  const CreateAccountTextWidget(),
                   SizedBox(height: context.heightPercent(5)),
+                  //name filed
+                  AppInputField(
+                    hint: AppLocale.name.getString(context),
+                    prefixIcon: Icons.person,
+                    controller: nameController,
+                  ),
+                  SizedBox(height: context.heightPercent(3)),
+
                   // phone filed
                   AppInputField(
                     hint: AppLocale.phone.getString(context),
@@ -79,35 +93,22 @@ class _SignInScreenState extends State<SignInScreen> {
                     isPassword: true,
                   ),
                   SizedBox(height: context.heightPercent(3)),
-                  //forget password button
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: TextButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, Routes.forgetPassword);
-                      },
-                      child: Text(
-                        AppLocale.forgetPassword.getString(context),
-                        style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ),
+                  AppInputField(
+                    hint: AppLocale.confirmPassword.getString(context),
+                    prefixIcon: Icons.lock,
+                    controller: confirmPasswordController,
+                    isPassword: true,
                   ),
+                  SizedBox(height: context.heightPercent(3)),
 
-                  SizedBox(height: context.heightPercent(2)),
                   // login button
                   AppButton(
                     onPressed: () {},
-                    title: AppLocale.signIn.getString(context),
+                    title: AppLocale.signUp.getString(context),
                   ),
 
                   SizedBox(height: context.heightPercent(2)),
-                  guestWidget(),
 
-                  // browse as guest button
-                  SizedBox(height: context.heightPercent(3)),
                   //divider widget
                   const OrContinueWith(),
                   SizedBox(height: context.heightPercent(3)),
@@ -137,17 +138,16 @@ class _SignInScreenState extends State<SignInScreen> {
                   Row(
                     children: [
                       Text(
-                        AppLocale.dontHaveAccount.getString(context),
+                        AppLocale.alreadyHaveAccount.getString(context),
                         style: StylessManager.blackFont4(context),
                       ),
                       SizedBox(width: context.widthPercent(3)),
-                      //textButton
                       TextButton(
                         onPressed: () {
-                          Navigator.pushNamed(context, Routes.signUp);
+                          Navigator.pushNamed(context, Routes.signIn);
                         },
                         child: Text(
-                          AppLocale.signUp.getString(context),
+                          AppLocale.signIn.getString(context),
                           style: StylessManager.welcomeTextStylewhite(context),
                         ),
                       ),

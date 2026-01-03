@@ -1,5 +1,6 @@
 import 'package:center/features/auth/forget_password/forget_password_screen.dart';
 import 'package:center/features/auth/sign-in/sign_in_screen.dart';
+import 'package:center/features/auth/sign-up/signup_screen.dart';
 import 'package:center/features/home/home_screen.dart';
 import 'package:center/features/splash/splash_screen.dart';
 import 'package:center/features/settings/settings_screen.dart';
@@ -20,6 +21,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SignInScreen());
       case Routes.forgetPassword:
         return MaterialPageRoute(builder: (_) => const ForgetPasswordScreen());
+      case Routes.signUp:
+        return MaterialPageRoute(builder: (_) => const SignupScreen());
 
       default:
         return MaterialPageRoute(

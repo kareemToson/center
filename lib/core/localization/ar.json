@@ -9,8 +9,12 @@
   "potential": "إمكانياتك",
   "welcome_centerix": " سنتريكس يرحب بكم",
   "welcome_back_details": "مرحباً بعودتك! يرجى إدخال تفاصيلك للوصول إلى دروسك",
+"create_account_details": "أهلاً بك! أنشئ حسابك وابدأ رحلتك التعليمية معنا"
+,  
   "phone": "الهاتف",
   "password": "كلمة المرور",
+  "name": "الاسم",
+  "confirm_password": "تأكيد كلمة المرور",
   "forget_password": "هل نسيت كلمة المرور؟",
   "email": "البريد الإلكتروني",
   "submit": "إرسال",
@@ -21,5 +25,6 @@
   "log_in": "تسجيل الدخول",
   "browse_as_guest": "تصفح كزائر",
   "dont_have_account": "ليس لديك حساب؟",
+  "already_have_account": "هل لديك حساب بالفعل؟",
   "sign_up": "تسجيل جديد"
 }

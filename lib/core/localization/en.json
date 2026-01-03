@@ -9,9 +9,14 @@
   "potential": "potential",
   "welcome_centerix": "Centerix Welcomes You",
   "welcome_back_details": "Welcome back! Please enter your details to \n access your lessons",
+"create_account_details": "Welcome! Create your account and start your learning journey with us."
+,
+  
   "phone": "Phone",
   "password": "Password",
-  "forget_password": "Forget Password?",
+  "name": "Name",
+  "confirm_password": "Confirm Password",
+  "forget_password": "Forget Password?",    
   "email": "Email",
   "submit": "Submit",
   "back_to_sign_in": "Back to Sign In",
@@ -21,5 +26,6 @@
   "log_in": "Log In",
   "browse_as_guest": "Browse as Guest",
   "dont_have_account": "Don't have an account?",
+  "already_have_account": "Already have an account?",
   "sign_up": "Sign Up"
 }

@@ -8,4 +8,6 @@ class Routes {
   static const String signIn = '/sign-in';
   //ForgetPasswordScreen
   static const String forgetPassword = '/forget-password';
+  //SignUpScreen
+  static const String signUp = '/sign-up';
 }

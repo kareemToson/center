@@ -3,13 +3,13 @@ import 'package:center/core/styles/styels_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localization/flutter_localization.dart';
 
-class WelcomeTextWidget extends StatelessWidget {
-  const WelcomeTextWidget({super.key});
+class CreateAccountTextWidget extends StatelessWidget {
+  const CreateAccountTextWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      AppLocale.welcomeBackDetails.getString(context),
+      AppLocale.createAccountDetails.getString(context),
       style: StylessManager.welcomeTextStyle(context),
       textAlign: TextAlign.center,
     );

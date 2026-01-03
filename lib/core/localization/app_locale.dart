@@ -17,11 +17,14 @@ class AppLocale {
   // Welcome related strings
   static const String welcomeCenterix = 'welcome_centerix';
   static const String welcomeBackDetails = 'welcome_back_details';
+  static const String createAccountDetails = 'create_account_details';
 
   // Input field related strings
   static const String phone = 'phone';
   static const String password = 'password';
   static const String email = 'email';
+  static const String name = 'name';
+  static const String confirmPassword = 'confirm_password';
   static const String forgetPassword = 'forget_password';
   static const String forgetPasswordSubtitle = 'forget_password_subtitle';
 
@@ -38,6 +41,7 @@ class AppLocale {
   static const String logIn = 'log_in';
   static const String browseAsGuest = 'browse_as_guest';
   static const String dontHaveAccount = 'dont_have_account';
+  static const String alreadyHaveAccount = 'already_have_account';
   static const String signUp = 'sign_up';
 
   static Future<Map<String, dynamic>> loadLocale(String localeCode) async {

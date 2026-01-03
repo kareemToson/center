@@ -1,5 +1,5 @@
 import 'package:center/core/localization/app_locale.dart';
-import 'package:center/core/styles/colors_manager.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_localization/flutter_localization.dart';
 
