@@ -5,6 +5,19 @@ import 'package:flutter_localization/flutter_localization.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await FlutterLocalization.instance.ensureInitialized();
+  final localization = FlutterLocalization.instance;
+  await localization.ensureInitialized();
+
+  // Initialize localization before running the app
+  localization.init(
+    mapLocales: [
+      MapLocale('en', await AppLocale.loadLocale('en')),
+      MapLocale('ar', await AppLocale.loadLocale('ar')),
+      MapLocale('es', await AppLocale.loadLocale('es')),
+      MapLocale('fr', await AppLocale.loadLocale('fr')),
+    ],
+    initLanguageCode: 'en',
+  );
+
   runApp(const Centerix());
 }

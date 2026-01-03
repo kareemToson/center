@@ -10,7 +10,9 @@ class AppLocale {
   static const String about = 'about';
 
   static Future<Map<String, dynamic>> loadLocale(String localeCode) async {
-    String jsonString = await rootBundle.loadString('lib/core/localization/\$localeCode.json');
+    String jsonString = await rootBundle.loadString(
+      'lib/core/localization/$localeCode.json',
+    );
     return json.decode(jsonString);
   }
 }

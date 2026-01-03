@@ -17,19 +17,6 @@ class _CenterixState extends State<Centerix> {
   @override
   void initState() {
     super.initState();
-    _initLocalization();
-  }
-
-  Future<void> _initLocalization() async {
-    localization.init(
-      mapLocales: [
-        MapLocale('en', await AppLocale.loadLocale('en')),
-        MapLocale('ar', await AppLocale.loadLocale('ar')),
-        MapLocale('es', await AppLocale.loadLocale('es')),
-        MapLocale('fr', await AppLocale.loadLocale('fr')),
-      ],
-      initLanguageCode: 'en',
-    );
     localization.onTranslatedLanguage = _onTranslatedLanguage;
   }
 

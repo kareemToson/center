@@ -32,7 +32,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             const SizedBox(height: 20),
             ListTile(
-              title: Text(localization.getLanguageName(languageCode: 'en') ?? 'English'),
+              title: Text(
+                localization.getLanguageName(languageCode: 'en') ?? 'English',
+              ),
               trailing: Radio<String>(
                 value: 'en',
                 groupValue: localization.currentLocale?.languageCode ?? 'en',
@@ -44,7 +46,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
             ),
             ListTile(
-              title: Text(localization.getLanguageName(languageCode: 'ar') ?? 'العربية'),
+              title: Text(
+                localization.getLanguageName(languageCode: 'ar') ?? 'العربية',
+              ),
               trailing: Radio<String>(
                 value: 'ar',
                 groupValue: localization.currentLocale?.languageCode ?? 'en',
@@ -56,7 +60,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
             ),
             ListTile(
-              title: Text(localization.getLanguageName(languageCode: 'es') ?? 'Español'),
+              title: Text(
+                localization.getLanguageName(languageCode: 'es') ?? 'Español',
+              ),
               trailing: Radio<String>(
                 value: 'es',
                 groupValue: localization.currentLocale?.languageCode ?? 'en',
@@ -68,7 +74,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
             ),
             ListTile(
-              title: Text(localization.getLanguageName(languageCode: 'fr') ?? 'Français'),
+              title: Text(
+                localization.getLanguageName(languageCode: 'fr') ?? 'Français',
+              ),
               trailing: Radio<String>(
                 value: 'fr',
                 groupValue: localization.currentLocale?.languageCode ?? 'en',
