@@ -1,3 +1,5 @@
+import 'package:center/core/widgets/header_widget.dart';
+
 import 'package:flutter/material.dart';
 
 class SignInScreen extends StatelessWidget {
@@ -5,6 +7,22 @@ class SignInScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white,
+
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                //header
+                Header(),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
