@@ -27,5 +27,15 @@
   "browse_as_guest": "Browse as Guest",
   "dont_have_account": "Don't have an account?",
   "already_have_account": "Already have an account?",
-  "sign_up": "Sign Up"
+  "sign_up": "Sign Up",
+  "select_grade_title": "Select Grade",
+  "select_grade_subtitle": "Step 1 of 3",
+  "step_one_of_three": "Step 1 of 3",
+  "which_grade_are_you_in": "Which grade are you in?",
+  "grade_help_text": "This helps us find the right centers and teachers for you.",
+  "first_year": "First Year",
+  "second_year": "Second Year",
+  "third_year": "Third Year",
+  "secondary_education": "Secondary Education",
+  "thanaweya_amma": "Thanaweya Amma"
 }

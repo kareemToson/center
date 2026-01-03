@@ -44,6 +44,20 @@ class AppLocale {
   static const String alreadyHaveAccount = 'already_have_account';
   static const String signUp = 'sign_up';
 
+  // Select Grade related strings
+  static const String selectGradeTitle = 'select_grade_title';
+  static const String selectGradeSubtitle = 'select_grade_subtitle';
+  static const String stepOneOfThree = 'step_one_of_three';
+  static const String whichGradeAreYouIn = 'which_grade_are_you_in';
+  static const String gradeHelpText = 'grade_help_text';
+
+  // Grade related strings
+  static const String firstYear = 'first_year';
+  static const String secondYear = 'second_year';
+  static const String thirdYear = 'third_year';
+  static const String secondaryEducation = 'secondary_education';
+  static const String thanaweyaAmma = 'thanaweya_amma';
+
   static Future<Map<String, dynamic>> loadLocale(String localeCode) async {
     String jsonString = await rootBundle.loadString(
       'lib/core/localization/$localeCode.json',

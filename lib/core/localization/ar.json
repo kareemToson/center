@@ -26,5 +26,15 @@
   "browse_as_guest": "تصفح كزائر",
   "dont_have_account": "ليس لديك حساب؟",
   "already_have_account": "هل لديك حساب بالفعل؟",
-  "sign_up": "تسجيل جديد"
+  "sign_up": "تسجيل جديد",
+  "select_grade_title": "اختيار الصف",
+  "select_grade_subtitle": "الخطوة 1 من 3",
+  "step_one_of_three": "الخطوة 1 من 3",
+  "which_grade_are_you_in": "في أي صف تدرس؟",
+  "grade_help_text": "يساعدنا هذا في العثور على المراكز والمعلمين المناسبين لك.",
+  "first_year": "السنة الأولى",
+  "second_year": "السنة الثانية",
+  "third_year": "السنة الثالثة",
+  "secondary_education": "التعليم الثانوي",
+  "thanaweya_amma": "الثانوية العامة"
 }
