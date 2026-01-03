@@ -13,8 +13,6 @@ Future<void> main() async {
     mapLocales: [
       MapLocale('en', await AppLocale.loadLocale('en')),
       MapLocale('ar', await AppLocale.loadLocale('ar')),
-      MapLocale('es', await AppLocale.loadLocale('es')),
-      MapLocale('fr', await AppLocale.loadLocale('fr')),
     ],
     initLanguageCode: 'en',
   );

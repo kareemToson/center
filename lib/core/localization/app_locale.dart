@@ -18,6 +18,10 @@ class AppLocale {
   static const String welcomeCenterix = 'welcome_centerix';
   static const String welcomeBackDetails = 'welcome_back_details';
 
+  // Input field related strings
+  static const String phone = 'phone';
+  static const String password = 'password';
+
   static Future<Map<String, dynamic>> loadLocale(String localeCode) async {
     String jsonString = await rootBundle.loadString(
       'lib/core/localization/$localeCode.json',
