@@ -36,6 +36,9 @@ class AppLocale {
 
   // Button related strings
   static const String logIn = 'log_in';
+  static const String browseAsGuest = 'browse_as_guest';
+  static const String dontHaveAccount = 'dont_have_account';
+  static const String signUp = 'sign_up';
 
   static Future<Map<String, dynamic>> loadLocale(String localeCode) async {
     String jsonString = await rootBundle.loadString(

@@ -36,4 +36,11 @@ class StylessManager {
     fontWeight: FontWeight.w600,
     color: Colors.grey,
   );
+  static TextStyle welcomeTextStylewhite(BuildContext context) => TextStyle(
+    fontSize: context.widthPercent(
+      5.5,
+    ), // Approximately 25px on a 500px wide screen
+    fontWeight: FontWeight.w600,
+    color: Colors.blueGrey,
+  );
 }

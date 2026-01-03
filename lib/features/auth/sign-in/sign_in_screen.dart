@@ -2,10 +2,12 @@ import 'package:center/core/extensions/responsive.dart';
 import 'package:center/core/localization/app_locale.dart';
 import 'package:center/core/routing/routes.dart';
 import 'package:center/core/styles/colors_manager.dart';
+import 'package:center/core/styles/styels_manager.dart';
 import 'package:center/core/widgets/header_widget.dart';
 import 'package:center/features/auth/forget_password/forget_password_screen.dart';
 import 'package:center/features/auth/widgets/auth_button.dart';
 import 'package:center/features/auth/widgets/divider.dart';
+import 'package:center/features/auth/widgets/guest.dart';
 import 'package:center/features/auth/widgets/input_field.dart';
 import 'package:center/features/auth/widgets/signin_google_ios.dart';
 
@@ -54,7 +56,7 @@ class _SignInScreenState extends State<SignInScreen> {
         child: SafeArea(
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(10.0),
               child: Column(
                 children: [
                   // header
@@ -101,6 +103,10 @@ class _SignInScreenState extends State<SignInScreen> {
                     title: AppLocale.signIn.getString(context),
                   ),
 
+                  SizedBox(height: context.heightPercent(2)),
+                  guestWidget(),
+
+                  // browse as guest button
                   SizedBox(height: context.heightPercent(3)),
                   //divider widget
                   const OrContinueWith(),
@@ -121,6 +127,23 @@ class _SignInScreenState extends State<SignInScreen> {
                         title: 'Apple',
                         assetPath: 'assets/ios_image.png',
                         onPressed: () {},
+                      ),
+                      SizedBox(height: context.heightPercent(2)),
+
+                      //signup
+                    ],
+                  ),
+                  SizedBox(height: context.heightPercent(4)),
+                  Row(
+                    children: [
+                      Text(
+                        AppLocale.dontHaveAccount.getString(context),
+                        style: StylessManager.blackFont20(context),
+                      ),
+                      SizedBox(width: context.widthPercent(3)),
+                      Text(
+                        AppLocale.signUp.getString(context),
+                        style: StylessManager.welcomeTextStylewhite(context),
                       ),
                     ],
                   ),

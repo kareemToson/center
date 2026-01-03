@@ -10,18 +10,15 @@ class OrContinueWith extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(child: Divider(thickness: 1)),
+        Expanded(child: Divider(thickness: 0.5, color: Colors.black45)),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 12),
           child: Text(
             AppLocale.orContinueWith.getString(context),
-            style: TextStyle(
-              color: ColorsManager.greyWithOpacityColor,
-              fontSize: 14,
-            ),
+            style: TextStyle(color: Colors.black, fontSize: 14),
           ),
         ),
-        Expanded(child: Divider(thickness: 1)),
+        Expanded(child: Divider(thickness: 0.5, color: Colors.black45)),
       ],
     );
   }
