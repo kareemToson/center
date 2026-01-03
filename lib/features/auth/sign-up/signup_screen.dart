@@ -141,7 +141,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         AppLocale.alreadyHaveAccount.getString(context),
                         style: StylessManager.blackFont4(context),
                       ),
-                      SizedBox(width: context.widthPercent(3)),
+
                       TextButton(
                         onPressed: () {
                           Navigator.pushNamed(context, Routes.signIn);

@@ -14,7 +14,7 @@ Future<void> main() async {
       MapLocale('en', await AppLocale.loadLocale('en')),
       MapLocale('ar', await AppLocale.loadLocale('ar')),
     ],
-    initLanguageCode: 'en',
+    initLanguageCode: 'ar',
   );
 
   runApp(const Centerix());

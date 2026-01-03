@@ -140,7 +140,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         AppLocale.dontHaveAccount.getString(context),
                         style: StylessManager.blackFont4(context),
                       ),
-                      SizedBox(width: context.widthPercent(3)),
+
                       //textButton
                       TextButton(
                         onPressed: () {

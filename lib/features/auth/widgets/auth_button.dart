@@ -1,3 +1,4 @@
+import 'package:center/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 
 class AppButton extends StatelessWidget {
@@ -21,7 +22,9 @@ class AppButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: ElevatedButton(
-        onPressed: onPressed,
+        onPressed: () {
+          Navigator.pushNamed(context, Routes.home);
+        },
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.transparent,
           shadowColor: Colors.transparent,
