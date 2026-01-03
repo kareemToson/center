@@ -10,4 +10,6 @@ class Routes {
   static const String forgetPassword = '/forget-password';
   //SignUpScreen
   static const String signUp = '/sign-up';
+  //SelectGradeScreen
+  static const String selectGrade = '/select-grade';
 }

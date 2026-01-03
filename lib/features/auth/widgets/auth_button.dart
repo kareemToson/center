@@ -23,7 +23,7 @@ class AppButton extends StatelessWidget {
       ),
       child: ElevatedButton(
         onPressed: () {
-          Navigator.pushNamed(context, Routes.home);
+          Navigator.pushNamed(context, Routes.selectGrade);
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.transparent,
