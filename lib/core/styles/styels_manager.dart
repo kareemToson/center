@@ -6,7 +6,7 @@ class StylessManager {
   // Responsive text style methods that require BuildContext
   static TextStyle blackFont20(BuildContext context) => TextStyle(
     fontSize: context.widthPercent(
-      4.0,
+      5.0,
     ), // Approximately 20px on a 500px wide screen
     color: Colors.black,
     fontWeight: FontWeight.w600,
