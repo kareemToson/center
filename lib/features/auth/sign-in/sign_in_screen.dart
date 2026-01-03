@@ -4,7 +4,7 @@ import 'package:center/core/routing/routes.dart';
 import 'package:center/core/styles/colors_manager.dart';
 import 'package:center/core/styles/styels_manager.dart';
 import 'package:center/core/widgets/header_widget.dart';
-import 'package:center/features/auth/forget_password/forget_password_screen.dart';
+
 import 'package:center/features/auth/widgets/auth_button.dart';
 import 'package:center/features/auth/widgets/divider.dart';
 import 'package:center/features/auth/widgets/guest.dart';

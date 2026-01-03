@@ -1,6 +1,4 @@
-import 'package:center/core/localization/app_locale.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_localization/flutter_localization.dart';
 
 class AppButton extends StatelessWidget {
   final String title;
