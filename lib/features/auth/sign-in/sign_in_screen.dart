@@ -4,7 +4,10 @@ import 'package:center/core/routing/routes.dart';
 import 'package:center/core/styles/colors_manager.dart';
 import 'package:center/core/widgets/header_widget.dart';
 import 'package:center/features/auth/forget_password/forget_password_screen.dart';
+import 'package:center/features/auth/widgets/auth_button.dart';
+import 'package:center/features/auth/widgets/divider.dart';
 import 'package:center/features/auth/widgets/input_field.dart';
+import 'package:center/features/auth/widgets/signin_google_ios.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localization/flutter_localization.dart';
@@ -89,6 +92,37 @@ class _SignInScreenState extends State<SignInScreen> {
                         ),
                       ),
                     ),
+                  ),
+
+                  SizedBox(height: context.heightPercent(2)),
+                  // login button
+                  AppButton(
+                    onPressed: () {},
+                    title: AppLocale.signIn.getString(context),
+                  ),
+
+                  SizedBox(height: context.heightPercent(3)),
+                  //divider widget
+                  const OrContinueWith(),
+                  SizedBox(height: context.heightPercent(3)),
+                  //sign in with google or apple
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+
+                    children: [
+                      SocialButton(
+                        title: 'Google',
+                        assetPath: 'assets/google_image.png',
+                        onPressed: () {},
+                      ),
+                      SizedBox(width: context.widthPercent(2)),
+                      SizedBox(height: context.heightPercent(2)),
+                      SocialButton(
+                        title: 'Apple',
+                        assetPath: 'assets/ios_image.png',
+                        onPressed: () {},
+                      ),
+                    ],
                   ),
                 ],
               ),

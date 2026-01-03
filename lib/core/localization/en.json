@@ -15,5 +15,8 @@
   "email": "Email",
   "submit": "Submit",
   "back_to_sign_in": "Back to Sign In",
-  "forget_password_subtitle": "Enter your email address and we'll send you a link to reset your password"
+  "forget_password_subtitle": "Enter your email address and we'll send you a link to reset your password",
+  "sign_in": "Sign In",
+  "or_continue_with": "Or continue with",
+  "log_in": "Log In"
 }

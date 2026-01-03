@@ -28,6 +28,14 @@ class AppLocale {
   // Button and action related strings
   static const String submit = 'submit';
   static const String backToSignIn = 'back_to_sign_in';
+  //signIn
+  static const String signIn = 'sign_in';
+
+  // Divider related strings
+  static const String orContinueWith = 'or_continue_with';
+
+  // Button related strings
+  static const String logIn = 'log_in';
 
   static Future<Map<String, dynamic>> loadLocale(String localeCode) async {
     String jsonString = await rootBundle.loadString(
