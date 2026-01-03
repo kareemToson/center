@@ -4,9 +4,9 @@ import '../extensions/responsive.dart';
 
 class StylessManager {
   // Responsive text style methods that require BuildContext
-  static TextStyle blackFont20(BuildContext context) => TextStyle(
+  static TextStyle blackFont5(BuildContext context) => TextStyle(
     fontSize: context.widthPercent(
-      4.0,
+      5.0,
     ), // Approximately 20px on a 500px wide screen
     color: Colors.black,
     fontWeight: FontWeight.w600,
@@ -31,7 +31,7 @@ class StylessManager {
 
   static TextStyle welcomeTextStyle(BuildContext context) => TextStyle(
     fontSize: context.widthPercent(
-      5.0,
+      6.0,
     ), // Approximately 25px on a 500px wide screen
     fontWeight: FontWeight.w600,
     color: Colors.grey,
