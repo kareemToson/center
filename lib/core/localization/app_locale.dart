@@ -21,7 +21,13 @@ class AppLocale {
   // Input field related strings
   static const String phone = 'phone';
   static const String password = 'password';
+  static const String email = 'email';
   static const String forgetPassword = 'forget_password';
+  static const String forgetPasswordSubtitle = 'forget_password_subtitle';
+
+  // Button and action related strings
+  static const String submit = 'submit';
+  static const String backToSignIn = 'back_to_sign_in';
 
   static Future<Map<String, dynamic>> loadLocale(String localeCode) async {
     String jsonString = await rootBundle.loadString(

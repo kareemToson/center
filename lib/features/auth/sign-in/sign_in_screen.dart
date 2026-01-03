@@ -1,7 +1,9 @@
 import 'package:center/core/extensions/responsive.dart';
 import 'package:center/core/localization/app_locale.dart';
+import 'package:center/core/routing/routes.dart';
 import 'package:center/core/styles/colors_manager.dart';
 import 'package:center/core/widgets/header_widget.dart';
+import 'package:center/features/auth/forget_password/forget_password_screen.dart';
 import 'package:center/features/auth/widgets/input_field.dart';
 
 import 'package:flutter/material.dart';
@@ -76,7 +78,9 @@ class _SignInScreenState extends State<SignInScreen> {
                   Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, Routes.forgetPassword);
+                      },
                       child: Text(
                         AppLocale.forgetPassword.getString(context),
                         style: const TextStyle(

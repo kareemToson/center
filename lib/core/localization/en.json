@@ -11,5 +11,9 @@
   "welcome_back_details": "Welcome back! Please enter your details to \n access your lessons",
   "phone": "Phone",
   "password": "Password",
-  "forget_password": "Forget Password?"
+  "forget_password": "Forget Password?",
+  "email": "Email",
+  "submit": "Submit",
+  "back_to_sign_in": "Back to Sign In",
+  "forget_password_subtitle": "Enter your email address and we'll send you a link to reset your password"
 }
