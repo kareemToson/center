@@ -1,9 +1,8 @@
 import 'package:center/core/extensions/responsive.dart';
-import 'package:center/core/localization/app_locale.dart';
+
 import 'package:center/core/routing/routes.dart';
 import 'package:center/core/styles/colors_manager.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_localization/flutter_localization.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
