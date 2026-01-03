@@ -8,6 +8,7 @@ class Centerix extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Centerix',
       initialRoute: Routes.splash,
       onGenerateRoute: AppRouter.generateRoute,
