@@ -4,4 +4,6 @@ class Routes {
   static const String splash = '/splash';
   static const String home = '/home';
   static const String settings = '/settings';
+  //SignInScreen
+  static const String signIn = '/sign-in';
 }

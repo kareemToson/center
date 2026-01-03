@@ -1,3 +1,4 @@
+import 'package:center/features/auth/sign-in/sign_in_screen.dart';
 import 'package:center/features/home/home_screen.dart';
 import 'package:center/features/splash/splash_screen.dart';
 import 'package:center/features/settings/settings_screen.dart';
@@ -14,6 +15,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const HomeScreen());
       case Routes.settings:
         return MaterialPageRoute(builder: (_) => const SettingsScreen());
+      case Routes.signIn:
+        return MaterialPageRoute(builder: (_) => const SignInScreen());
 
       default:
         return MaterialPageRoute(
