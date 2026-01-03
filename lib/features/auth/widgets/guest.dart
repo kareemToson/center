@@ -1,4 +1,5 @@
 import 'package:center/core/localization/app_locale.dart';
+import 'package:center/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localization/flutter_localization.dart';
 
@@ -24,7 +25,10 @@ class guestWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              //navigate to seetings screen
+              Navigator.of(context).pushNamed(Routes.settings);
+            },
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent,
               shadowColor: Colors.transparent,

@@ -11,6 +11,13 @@ class StylessManager {
     color: Colors.black,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle blackFont4(BuildContext context) => TextStyle(
+    fontSize: context.widthPercent(
+      4.0,
+    ), // Approximately 20px on a 500px wide screen
+    color: Colors.black,
+    fontWeight: FontWeight.w600,
+  );
 
   static TextStyle unlockYourTextStyle(BuildContext context) => TextStyle(
     fontSize: context.widthPercent(

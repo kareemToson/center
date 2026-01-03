@@ -138,7 +138,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     children: [
                       Text(
                         AppLocale.dontHaveAccount.getString(context),
-                        style: StylessManager.blackFont20(context),
+                        style: StylessManager.blackFont4(context),
                       ),
                       SizedBox(width: context.widthPercent(3)),
                       Text(
