@@ -1,4 +1,6 @@
+import 'package:center/features/home/home_screen.dart';
 import 'package:center/features/splash/splash_screen.dart';
+import 'package:center/features/settings/settings_screen.dart';
 import 'package:flutter/material.dart';
 import 'routes.dart';
 
@@ -8,6 +10,10 @@ class AppRouter {
     switch (settings.name) {
       case Routes.splash:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
+      case Routes.home:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case Routes.settings:
+        return MaterialPageRoute(builder: (_) => const SettingsScreen());
 
       default:
         return MaterialPageRoute(
