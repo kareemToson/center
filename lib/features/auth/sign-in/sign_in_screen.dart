@@ -1,6 +1,10 @@
+import 'package:center/core/extensions/responsive.dart';
+import 'package:center/core/styles/colors_manager.dart';
 import 'package:center/core/widgets/header_widget.dart';
 
 import 'package:flutter/material.dart';
+
+import '../widgets/welcome_text_widget.dart';
 
 class SignInScreen extends StatelessWidget {
   const SignInScreen({super.key});
@@ -9,7 +13,6 @@ class SignInScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -18,6 +21,8 @@ class SignInScreen extends StatelessWidget {
               children: [
                 //header
                 Header(),
+                SizedBox(height: context.heightPercent(5)),
+                const WelcomeTextWidget(),
               ],
             ),
           ),
