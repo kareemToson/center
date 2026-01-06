@@ -60,6 +60,7 @@ class AppLocale {
 
   // Next step related strings
   static const String nextStep = 'next_step';
+  static const String continueString = 'continue_string';
 
   // Select Track related strings
   static const String stepTwoOfFour = 'step_two_of_four';
