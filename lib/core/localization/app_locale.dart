@@ -58,6 +58,18 @@ class AppLocale {
   static const String secondaryEducation = 'secondary_education';
   static const String thanaweyaAmma = 'thanaweya_amma';
 
+  // Next step related strings
+  static const String nextStep = 'next_step';
+
+  // Select Track related strings
+  static const String stepTwoOfFour = 'step_two_of_four';
+  static const String selectYourTrack = 'select_your_track';
+  static const String trackSubtitle = 'track_subtitle';
+  static const String scientificTrack = 'scientific_track';
+  static const String scientificTrackAr = 'scientific_track_ar';
+  static const String literaryTrack = 'literary_track';
+  static const String literaryTrackAr = 'literary_track_ar';
+
   static Future<Map<String, dynamic>> loadLocale(String localeCode) async {
     String jsonString = await rootBundle.loadString(
       'lib/core/localization/$localeCode.json',

@@ -1,4 +1,7 @@
 import 'package:center/core/styles/colors_manager.dart';
+import 'package:center/core/routing/routes.dart';
+import 'package:center/features/auth/widgets/auth_button.dart';
+import 'package:center/features/select_track/select_track_screen.dart';
 import 'package:center/features/settings/model/grade_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localization/flutter_localization.dart';
@@ -209,6 +212,12 @@ class _SelectGradeScreenState extends State<SelectGradeScreen> {
                       );
                     },
                   ),
+                ),
+                AppButton(
+                  title: AppLocale.nextStep.getString(context),
+                  onPressed: () {
+                    Navigator.pushNamed(context, Routes.selectTrack);
+                  },
                 ),
               ],
             ),

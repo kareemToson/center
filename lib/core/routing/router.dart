@@ -5,6 +5,7 @@ import 'package:center/features/home/home_screen.dart';
 import 'package:center/features/select_grade/select_grade.dart';
 import 'package:center/features/splash/splash_screen.dart';
 import 'package:center/features/settings/settings_screen.dart';
+import 'package:center/features/select_track/select_track_screen.dart';
 import 'package:flutter/material.dart';
 import 'routes.dart';
 
@@ -26,6 +27,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SignupScreen());
       case Routes.selectGrade:
         return MaterialPageRoute(builder: (_) => const SelectGradeScreen());
+      case Routes.selectTrack:
+        return MaterialPageRoute(builder: (_) => const SelectTrackScreen());
 
       default:
         return MaterialPageRoute(

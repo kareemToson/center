@@ -37,5 +37,13 @@
   "second_year": "Second Year",
   "third_year": "Third Year",
   "secondary_education": "Secondary Education",
-  "thanaweya_amma": "Thanaweya Amma"
+  "thanaweya_amma": "Thanaweya Amma",
+  "next_step": "Next Step",
+  "step_two_of_four": "STEP 2 OF 4",
+  "select_your_track": "Select your track",
+  "track_subtitle": "Choose the specialization you are currently studying to find the right teachers.",
+  "scientific_track": "Scientific",
+  "scientific_track_ar": "علمي",
+  "literary_track": "Literary",
+  "literary_track_ar": "أدبي"
 }

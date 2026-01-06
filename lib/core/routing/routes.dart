@@ -12,4 +12,6 @@ class Routes {
   static const String signUp = '/sign-up';
   //SelectGradeScreen
   static const String selectGrade = '/select-grade';
+  //SelectTrackScreen
+  static const String selectTrack = '/select-track';
 }
