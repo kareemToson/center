@@ -70,6 +70,10 @@ class AppLocale {
   static const String literaryTrack = 'literary_track';
   static const String literaryTrackAr = 'literary_track_ar';
 
+  // Step related strings
+  static const String stepOneOfTwo = 'step_one_of_two';
+  static const String stepTwoOfTwo = 'step_two_of_two';
+
   static Future<Map<String, dynamic>> loadLocale(String localeCode) async {
     String jsonString = await rootBundle.loadString(
       'lib/core/localization/$localeCode.json',

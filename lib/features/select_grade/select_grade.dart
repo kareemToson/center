@@ -1,7 +1,6 @@
 import 'package:center/core/styles/colors_manager.dart';
 import 'package:center/core/routing/routes.dart';
 import 'package:center/features/auth/widgets/auth_button.dart';
-import 'package:center/features/select_track/select_track_screen.dart';
 import 'package:center/features/settings/model/grade_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localization/flutter_localization.dart';
@@ -63,12 +62,12 @@ class _SelectGradeScreenState extends State<SelectGradeScreen> {
                 Row(
                   children: [
                     IconButton(
-                      icon: const Icon(Icons.arrow_back),
+                      icon: const Icon(Icons.arrow_back_ios),
                       onPressed: () {},
                     ),
                     const Spacer(),
                     Text(
-                      AppLocale.stepOneOfThree.getString(context),
+                      AppLocale.stepOneOfTwo.getString(context),
                       style: TextStyle(
                         color: Colors.lightBlue,
                         fontWeight: FontWeight.w600,
@@ -82,7 +81,7 @@ class _SelectGradeScreenState extends State<SelectGradeScreen> {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(8),
                   child: LinearProgressIndicator(
-                    value: 0.33,
+                    value: 0.50,
                     minHeight: 6,
                     backgroundColor: Colors.grey.shade300,
                     valueColor: const AlwaysStoppedAnimation<Color>(

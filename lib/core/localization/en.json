@@ -45,5 +45,7 @@
   "scientific_track": "Scientific",
   "scientific_track_ar": "علمي",
   "literary_track": "Literary",
-  "literary_track_ar": "أدبي"
+  "literary_track_ar": "أدبي",
+  "step_one_of_two": "Step 1 of 2",
+  "step_two_of_two": "Step 2 of 2"
 }

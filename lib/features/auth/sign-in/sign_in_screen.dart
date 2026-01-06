@@ -99,7 +99,9 @@ class _SignInScreenState extends State<SignInScreen> {
                   SizedBox(height: context.heightPercent(2)),
                   // login button
                   AppButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.selectGrade);
+                    },
                     title: AppLocale.signIn.getString(context),
                   ),
 
